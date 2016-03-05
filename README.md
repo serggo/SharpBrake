@@ -61,6 +61,6 @@ If you are using IIS7+ in Integrated Pipeline mode, add the HttpModule to the `s
 
 ## TODO
 
-There are some important things to do on the `HttpModule` still.  Most importantly, it will be incredibly verbose on its exception handling.  In .NET, a 404 is considered an exception, so it will catch, report, and subsequently notify you of any time someone tries to access a URL that doesn't exist.
+There are some important things to do on the `HttpModule` still. Most importantly, it will be incredibly verbose on its exception handling. In .NET, a 404 is considered an exception, so it will catch, report, and subsequently notify you of any time someone tries to access a URL that doesn't exist.
 
 To circumvent this, plan on adding the ability to set a series of patterns that you can use to exclude exceptions based on exception type, part of the message, or something along those lines.
